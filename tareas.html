@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estiloTareas.css">
+    <script src="comTareas.js" defer></script>
+</head>
+<body>
+    <h1>Gestion de Tareas</h1>
+    <a href="dashboard.html">volver a dashboard</a>
+
+    <form id="formulario-tarea" action="">
+        <div>
+            <label>concepto</label>
+            <input type="text" id="concepto" required placeholder="Revisar pendientes">
+        </div>
+        <div>
+            <label>Cliente referido</label>
+            <select id="clienteReferido">
+                <option value="">Selecciona cliente</option>
+            </select>
+        </div>
+        <div>
+            <label>Fecha fin:</label>
+            <input type="date" id="fechafin" required>
+        </div>
+        <button type="submit">Guardar tarea</button>
+    </form>
+
+    <table class="ds">
+        <thead>
+            <tr class="filas">
+                <th>Fecha creacion</th>
+                <th>Concepto</th>
+                <th>Cliente</th>
+                <th>Fecha fin</th>
+            </tr>
+        </thead>
+    
+    <tbody id="cuerpo-tabla-tareas">
+
+    </tbody>
+</table>
+
+
+</body>
+</html>

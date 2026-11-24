@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-Despacho de abogados</title>
+    <link rel="stylesheet" href="estiloDashboard.css">
+</head>
+<body class="Dashboard">
+
+    <aside class="sidebar">
+        <h2>Despacho Legal</h2>
+        <nav>
+            <ul>
+                <li><a href="/dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="#">Casos / expedientes</a></li>
+                <li><a href="/clientes.html">Clientes</a></li>
+                <li><a href="#" id="logout-btn">Cerrar sesion</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header>
+            <h1 id="welcome-msg">Bienvenido</h1>
+        </header>
+
+        <section class="dashboard-grid">
+            <h2>Tareas pendientes</h2>
+            <div id="task-container" class="cards-container"></div>
+        </section>
+    </main>
+
+    
+
+    <div id="modal-aviso" class="modal" style="display: none;">
+        <div class="modal-contenido">
+            <h2> !Atencion!</h2>
+            <p> Hay tareas pendientes:</p>
+            <div id="info-tareas-pendientes" style="margin: 15px 0;">
+            </div>
+            <button id="btn-cerrar" style="background-color: brown;">
+            </button>
+        </div>    
+    </div>
+
+
+
+<script src="comdashboard.js"></script>
+    
+</body>
+</html>

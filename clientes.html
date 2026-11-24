@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clientes-despacho de abogados</title>
+    <link rel="stylesheet" href="./">
+    
+</head>
+<body class="Dashboard">
+    <aside class="sidebar">
+        <h2>Despacho Legal</h2>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="clientes.html" class="active">clientes</a></li>
+                <li><a href="tareas.html">Tareas pendientes</a></li>
+
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <h1>Gestion de clientes</h1>
+
+        <div style="background-color: aliceblue; padding: 20px; margin-bottom: 20px;">
+            <h3 id="titulo">Añadir cliente</h3>
+        
+            <form id="formulario">
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="text" id="telefono" placeholder="Telefono" required>
+
+                <button type="submit">Guardar</button>
+
+
+            </form>
+        </div>
+
+        <div style="background-color: aliceblue; padding: 20px;">
+        <h3>Lista de clientes</h3>
+        <table class="ds">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Telefono</th>
+                    <th>Actualizar</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpo-tabla">
+                <tr>
+                    <td>Maria Rengel</td>
+                    <td>456123789</td>
+                    <td>consulta</td>
+                </tr>
+                
+            </tbody>
+        </table>
+        </div>
+    </main>
+    <script src="./comclientes.js"></script>
+</body>
+</html>
